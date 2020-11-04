@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: '15'
       - name: textlint-github-pr-check
-        uses: kounoike/action-textlint@run-on-app
+        uses: kounoike/action-textlint@run-on-image-textlint
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-check
