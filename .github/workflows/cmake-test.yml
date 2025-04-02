@@ -1,0 +1,9 @@
+on:
+  push:
+
+jobs:
+  check:
+    name: check cmake
+    runs-on: ubuntu-latest
+    steps:
+      - run: cmake --version
