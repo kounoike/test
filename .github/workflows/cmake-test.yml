@@ -6,5 +6,6 @@ jobs:
     name: check cmake
     runs-on: ubuntu-latest
     steps:
-      - run: dpkg -l | grep cmake
+      - run: which dpkg
+      - run: dpkg -l
       - run: cmake --version
