@@ -4,6 +4,7 @@ on:
 jobs:
   check:
     name: check cmake
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
+      - run: dpkg -l | grep cmake
       - run: cmake --version
